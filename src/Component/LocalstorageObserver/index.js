@@ -3,9 +3,10 @@ import useLocalStorageObserver from '../../Hooks/useLocalStorageObserver';
 
 function LocalStorageObserver() {
   const localStorage = useLocalStorageObserver('testrer');
+  console.log('localStorage: ', localStorage);
 
   return (
-    <div>{localStorage}</div>
+    <div>{JSON.stringify(localStorage)}</div>
   )
 }
 

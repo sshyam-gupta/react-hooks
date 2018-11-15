@@ -44,5 +44,12 @@ export default function useLocalStorageObserver(key) {
     return () => clearInterval(id);
   }, [value]);
 
-  return value;
+  let valueToSend;
+  try {
+    valueToSend = JSON.parse(value);
+  } catch (ex) {
+    valueToSend = value;
+  }
+
+  return valueToSend;
 }
