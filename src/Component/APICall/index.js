@@ -32,7 +32,7 @@ function APICall() {
   return (
     <div>{data && data.map(res => (
       <div className="frow text-capitalize" key={res.id}>
-        <b>Width {width}&nbsp;</b>
+        <b>Width hook {width}&nbsp;</b>
         {res.id}. {res.title}
       </div>
     ))}</div>
