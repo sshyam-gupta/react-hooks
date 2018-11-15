@@ -7,8 +7,13 @@ function WindowResize() {
   
   return (
     <div>
-      <div>{width}</div>
-      <button onClick={clickCount.onClick}>{clickCount.title}</button>
+      <div>{`Current window width: ${width}`}</div>
+      <button
+        className="frow-container mb-15 mt-15"
+        onClick={clickCount.onClick}
+      >
+        {`Clicked ${clickCount.title} times`}
+      </button>
     </div>
   )
 }
